@@ -1,0 +1,77 @@
+@import "mixins";
+@import "variable";
+
+
+@mixin border-radius($i) {
+    border-radius: $i + px;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    background: black;
+    border: 0;
+    border-radius: 15px;
+}
+
+.button--red {
+    @extend .button;
+    background: $color-red;
+    color: white;
+    @include margin-left(10)
+}
+
+.button--green {
+    @extend .button;
+    background: $color-green;
+    color: white;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &__item {
+        margin: 0 15px;
+    }
+
+    &__link {
+        text-decoration: none;
+        @include border-radius(15);
+
+        color: gray;
+
+        &--active {
+            color: $color-green;
+        }
+
+        &--disabled {
+            color: rgb(236, 217, 217);
+        }
+
+        &:hover {
+            color: $color-red;
+        }
+    }
+}
+
+$length : 5;
+
+@for $i from 1 through $length {
+    .block#{$i} {
+        padding: #{$i};
+    }
+}
+
+$i: 0;
+$length : 100;
+
+@while ($i <=$length) {
+    .block-example-#{$i} {
+        margin-bottom: $i + px;
+    }
+
+    $i : $i+20;
+}

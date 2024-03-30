@@ -1,0 +1,88 @@
+.button, .button--green, .button--red {
+  height: 50px;
+  width: 50px;
+  background: black;
+  border: 0;
+  border-radius: 15px;
+}
+
+.button--red {
+  background: #c30000;
+  color: white;
+  margin-left: 10px;
+}
+
+.button--green {
+  background: #007200;
+  color: white;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.nav__item {
+  margin: 0 15px;
+}
+.nav__link {
+  text-decoration: none;
+  border-radius: 15px;
+  color: gray;
+}
+.nav__link--active {
+  color: #007200;
+}
+.nav__link--disabled {
+  color: rgb(236, 217, 217);
+}
+.nav__link:hover {
+  color: #c30000;
+}
+
+.block1 {
+  padding: 1;
+}
+
+.block2 {
+  padding: 2;
+}
+
+.block3 {
+  padding: 3;
+}
+
+.block4 {
+  padding: 4;
+}
+
+.block5 {
+  padding: 5;
+}
+
+.block-example-0 {
+  margin-bottom: 0px;
+}
+
+.block-example-20 {
+  margin-bottom: 20px;
+}
+
+.block-example-40 {
+  margin-bottom: 40px;
+}
+
+.block-example-60 {
+  margin-bottom: 60px;
+}
+
+.block-example-80 {
+  margin-bottom: 80px;
+}
+
+.block-example-100 {
+  margin-bottom: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
